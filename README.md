@@ -120,16 +120,51 @@ CSV file:        C:/Users/Partner/Desktop/mlb_svgs/mlb_teams.csv
 
 Make sure these folders exist. If your partner wants, they can edit the paths directly in fusion_template.py to match their system.
 
-✅ Quick Start Summary
+# Raspberry Pi 5 MLB Case — Quick Start
 
-Download this repo.
+This repo creates a **Pi 5 case** with a top cover and 30 **MLB team badges** ready for 3D printing.  
 
-Put SVGs and CSV in mlb_svgs/.
+---
 
-Create STL export folder.
+## 🛠 What You Need
 
-Open Fusion 360 → Load fusion_template.py → Run.
+- Fusion 360 installed ([Download Here](https://www.autodesk.com/products/fusion-360/overview))  
+- Folder with **SVG logos** for each MLB team  
+- CSV file `mlb_teams.csv` (included)  
+- Folder for **STL exports**
 
-Print STL files from export folder.
+---
 
-All 30 MLB badges ready with minimal setup.
+## 📂 Folder Setup Example
+
+C:/Users/Partner/Desktop/mlb_svgs/ # Put SVGs and CSV here
+C:/Users/Partner/Desktop/mlb_stl/ # STL files will go here
+
+yaml
+Copy code
+
+---
+
+## ⚡ How to Run
+
+1. Open Fusion 360 → **Scripts & Add-Ins**  
+2. Load `fusion_template.py`  
+3. Check SVGs + CSV are in the folder (`mlb_svgs/`)  
+4. Make sure the STL export folder exists (`mlb_stl/`)  
+5. Click **Run**  
+
+> The script will create the case, badges, and automatically export **STL files** for all 30 teams.
+
+---
+
+## 🖨 Printing Tips
+
+- If a badge is too tight/loose, adjust `badge_clearance` in the script  
+- You can print badges in different colors  
+- Make sure SVGs are clean for the best print quality
+
+---
+
+## ✅ Done!
+
+After running, all 30 MLB badges will be in your STL folder, ready to print. No extra setup needed.
